@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+        <head>
+            <meta charset="uft-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title></title>
+            <meta name="description" content="">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- app.js is told to look through the public folder for static files -->
+            <link rel="stylesheet" href="/stylesheets/style.css">
+        </head>
+
+        <body>
+            <div>
+                <h1>Hello</h1>
+            </div>
+            <hr />
+
+            <!-- ejs templating example -->
+            <!-- please check app.js for a res.render that passes an object as a 2nd argument -->
+
+                <% if (user) { %>
+            <div>
+                Welcome back <%- user -%>
+            </div>
+                <% } else { %>
+            <div>Please login</div>
+                <% } %>
+
+            <hr />
+            
+            <div>
+                <img src="/images/screeny.png" alt="hamham">
+            </div>
+
+            <script src="/javascripts/methods.js"></script>
+        </body>
+</htmlL>
